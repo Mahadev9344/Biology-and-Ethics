@@ -1,21 +1,2 @@
-Project Title : Off-Target Prediction in Cancer Therapy Using CRISPR-Cas9 
-CRISPR-Cas9 is a gene-editing tool used to correct genetic mutations in cancer therapy. However, while targeting the correct gene, CRISPR sometimes makes unintended changes (called off-target effects) in the genome, which can cause harmful side effects like cancer cell mutation or other diseases.
-To predict off-target effects of CRISPR-Cas9 , We used Feedforward Neural Networks (FNN)
-
-Dataset Used:
--> encodedwithoutTsai dataset (Off-target sequences)
--> guideseq dataset (Validated off-targets from biological experiments)
-
-Preprocessing Techniques:
--> 8-bit Encoding
--> Reshaping into 8x23 format
-
-Model Used:
--> Feedforward Neural Network (FNN) 
-
-Progress So far : 
--> Downloaded Dataset.
--> Done Preprocessing which involves cleaning the dataset and 8-bit One-hot encoding.
--> Build FNN model.
--> Acheived 96% accuracy
+CRISPR-Cas9 has emerged as a powerful tool for precise genome editing, offering revolutionary potential in areas like gene therapy and cancer treatment. However, one major concern is its tendency to make unintended cuts in the DNA, known as off-target effects, which can lead to unwanted mutations. In this project, we propose a deep learning-based approach using a Feedforward Neural Network (FNN) to predict such off-target activity with high efficiency. We encoded guide RNA and DNA sequences into 8×23 image-like matrices to feed into the model, enabling it to learn meaningful patterns. Our model was trained on a dataset of over 50,000 data points and achieved a ROC AUC of 0.82, showing strong potential for distinguishing off-targets despite class imbalance. This approach offers a simple yet effective solution for enhancing the safety of CRISPR applications and can be further expanded with balanced datasets and real-world validations in future research.
 
